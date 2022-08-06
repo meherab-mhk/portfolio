@@ -1,0 +1,699 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    
+}
+a{
+    text-decoration: none;
+
+}
+ul,ol{
+    list-style-type: none;
+
+}
+img{
+    vertical-align: middle;
+
+}
+.clr{
+    clear: both;
+}
+/* =========================== Menu part css =======================*/
+
+.nav-link{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    
+
+}
+.navbar-light .navbar-nav .nav-link {
+	color: #fff;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+	color: #fff;
+}
+.navbar-light .navbar-nav .nav-link:focus {
+	color: #fff;
+}
+.nav-item{
+    padding: 0 12px;
+}
+.navbar{
+    position: absolute;
+    z-index: 9;
+    width: 100%;
+}
+/* =========================== Banner part css =======================*/
+#banner{
+    background: url(../images/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 190px;
+    padding-bottom: 215px;
+    position: relative;
+    height: 100vh;
+    
+
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+    
+
+
+
+    
+}
+#banner::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.342);
+}
+.banner-text{
+    position: relative;
+    z-index: 9;
+}
+.banner-text h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 42px;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+    color: #fff;
+    display: inline-block;
+    position: relative;
+
+}
+.banner-text h3::after{
+    position: absolute;
+    content: '';
+    width: 70px;
+    height: 1px;
+    background: #fff;
+    top: 0;
+    left: 0;
+
+}
+.banner-text h3::before{
+    position: absolute;
+    content: '';
+    width: 70px;
+    height: 1px;
+    background: #fff;
+    bottom: 20px;
+    right: 0;
+
+}
+.banner-text h5{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #fff;
+    padding-bottom: 48px;
+}
+.banner-text a{
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 18px 45px;
+    border: 1px solid #fff;
+    color: #fff;
+    transition: all linear.3s;
+    position: relative;
+}
+.banner-text a::after{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #fff;
+    opacity: 0;
+    z-index: -1;
+    transition: all linear .3s;
+}
+.banner-text a:hover::after{
+    opacity: 1;
+    width: 100%;
+    transition: all linear .3s;
+}
+.banner-text a:hover{
+    color: #000;
+    text-decoration: none;
+}
+
+/* =========================== About part css =======================*/
+#about{
+    padding-top: 100px;
+    border-bottom: 1px dotted #1e272e;
+    background: #f1f2f6;
+    border-top: 1px dotted #1e272e;
+}
+
+.about-text{
+    margin-bottom: 50px;
+}
+.about-text h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 40px;
+    padding-top: 30px;
+}
+.about-text h3::after{
+    position: absolute;
+    content: '';
+    width: 40px;
+    height: 1px;
+    background: #000;
+    top: 30px;
+    left: 0;
+
+}
+.about-text h3::before{
+    position: absolute;
+    content: '';
+    width: 40px;
+    height: 1px;
+    background: #000;
+    bottom: 0px;
+    right: 0;
+
+}
+.about-text h4{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+}
+.about-text p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+    padding-bottom: 20px;
+    line-height: 24px;
+    margin-bottom: 0;
+
+}
+.about-text a{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #000;
+    border: 1px solid #000;
+    padding: 15px 50px;
+    position: relative;
+
+    
+}
+.about-text a::after{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 100%;
+    background: #000;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all linear .4s;
+    z-index: -1;
+}
+.about-text a:hover{
+    text-decoration: none;
+}
+.about-text a:hover{
+    color: #fff;
+    
+}
+.about-text a:hover::after{
+    opacity: 1;
+    width: 100%;
+    transition: all linear .4s;
+}
+/* =========================== education part css =======================*/
+#education{
+    padding-top: 100px;
+    background: #f1f2f6;
+    padding-bottom: 100px;
+    position: relative;
+    border-bottom: 1px dotted #1e272e;
+
+    -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+    
+
+}
+#education::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 25px;
+    background: #f1f2f6;
+    bottom: -26px;
+    left: 0; 
+    transform-origin: -26px;
+    transform: skew(-89deg);
+    transform-origin: left top;
+    z-index: 1;
+
+
+}
+.school{
+    background: #fff;
+    padding: 20px 0;
+    filter: drop-shadow(0 0 0.40rem rgba(0, 0, 0, 0.575));
+}
+.school i{
+    font-size: 40px;
+    padding-bottom: 15px;
+}
+.school h4{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+.school h5{
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+.school p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 0 20px;
+}
+/* =========================== skill part css =======================*/
+#skill{
+    background: url(../images/education.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+    
+-webkit-clip-path: polygon(0 12%, 100% 0, 100% 88%, 0% 100%);
+clip-path: polygon(0 12%, 100% 0, 100% 88%, 0% 100%);
+
+}
+
+#skill::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.568);
+    left: 0;
+    top: 0;
+}
+.skill-item{
+    position: relative;
+    z-index: 9;
+}
+.skill-item h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    color: #fff;
+    width: 100px;
+    height: 100px;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    line-height: 100px;
+    display: inline-block;
+    margin-bottom: 10px;
+
+
+}
+.skill-item h4{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+}
+/* =========================== portfolio part css =======================*/
+#portfolio{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    border-bottom: 1px dotted #1e272e;
+    border-top: 1px dotted #1e272e;
+    background: #f1f2f6;
+
+}
+.port-head h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    text-transform: uppercase;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 40px;
+}
+.port-head h3::after{
+    position: absolute;
+    content: '';
+    width: 55px;
+    height: 1px;
+    background: #000;
+    top: 0;
+    left: 0;
+
+
+}
+.port-head h3::before{
+    position: absolute;
+    content: '';
+    width: 55px;
+    height: 1px;
+    background: #000;
+    bottom: 0;
+    right: 0;
+
+
+}
+.port-item{
+    position: relative;
+    
+}
+.port-item .overlay{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 0%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.514);
+    opacity: 0;
+    transition: all linear.3s;
+}
+.port-item .overlay i{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #fff;
+    line-height: 40px;
+    color: #fff;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.port-item .overlay i:hover{
+    background: #fff;
+    color: #000;
+    transition: all linear.3s;
+}
+.port-item:hover .overlay{
+    
+    opacity: 1;
+    height: 100%;
+    transition: all linear.3s;
+
+}
+/* =========================== Footter part css =======================*/
+#footer{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: url(../images/footer.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+
+}
+#footer::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.849);
+    left: 0;
+    top: 0;
+}
+.my-info{
+    position: relative;
+    z-index: 99;
+}
+.my-info .img{
+    margin-bottom: 30px;
+}
+.my-info .img  img{
+    border-radius: 50%;
+    border: 1px solid #fff;
+    margin-right: 20px;
+}
+.my-info .img   h4{
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    margin-top: 30px;
+}
+.my-info .img   h5{
+    
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #fff;
+    margin-bottom: 0;
+}
+.my-info .address{
+    margin-bottom: 30px;
+}
+.my-info .address ul li i{
+    color: #fff;
+    
+}
+.my-info .address ul li p{
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: #fff;
+    margin-left: 10px;
+}
+.my-info .footer-icon i{
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #fff;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+.my-info .footer-icon i:hover{
+    background: #fff;
+    color: #000;
+    transition: all linear.3s;
+}
+.contact-form{
+    position: relative;
+    z-index: 99;
+}
+.contact-form input{
+    width: 100%;
+    padding: 10px;
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.contact-form textarea{
+    width: 100%;
+    border: 1px solid #fff;
+    background: none;
+    padding: 10px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.contact-form button{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #fff;
+    background: #fff;
+    color: #000;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
